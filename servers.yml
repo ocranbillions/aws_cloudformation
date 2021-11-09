@@ -155,3 +155,10 @@ Resources:
       VpcId:
         Fn::ImportValue:
           Fn::Sub: '${EnvironmentName}-VPCID'
+
+Outputs:
+  WebAppLBUrl:
+    Description: Load balancer public
+    Value:
+      Fn::Join: ["", ["http://", !GetAtt WebAppLB.DNSName]]
+
