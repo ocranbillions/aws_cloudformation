@@ -1,0 +1,3 @@
+. create.sh infrastack network-infrastructure.yml network-params.json
+
+. create.sh serverstack servers.yml servers-params.json
